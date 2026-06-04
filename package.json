@@ -1,0 +1,49 @@
+{
+  "name": "@fleetia/test-utils",
+  "version": "0.1.0",
+  "description": "Shared React Testing Library and Vitest helpers for Fleetia packages.",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/fleetia/test-utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleetia/test-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fleetia/test-utils/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./setup": {
+      "types": "./dist/setup.d.ts",
+      "import": "./dist/setup.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "tsc -p tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@testing-library/react": "^16.3.0"
+  },
+  "peerDependencies": {
+    "vitest": ">=3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  },
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
+}
