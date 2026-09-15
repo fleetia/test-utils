@@ -27,7 +27,8 @@
   },
   "files": [
     "README.md",
-    "dist"
+    "dist",
+    ".github/assets"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
